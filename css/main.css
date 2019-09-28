@@ -1,0 +1,320 @@
+/* Specification */
+
+*, *:focus {
+    outline: none;
+}
+
+button, button:focus {
+    outline: none;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    color: #000;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+
+.title {  
+    padding-bottom: 70px;  
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.title__main {
+    margin-bottom: 12px;
+    font-size: 32px;
+    color: #010101;
+}
+
+.title__text {
+    max-width: 780px;
+    font-size: 20px;
+    color: #313841;
+}
+
+.yellow {
+    color: #fcdb00;
+}
+
+.l-gray {
+    color: #898989;
+}
+
+/* Header */
+
+.header {
+    background-color: #fcdb00;
+    color: #010101;
+    padding-top: 60px;
+    padding-bottom: 108px;
+}
+
+.menu {
+    margin-top: 8px;
+}
+
+.menu__item {
+    
+}
+
+.menu__item a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+.offer {
+    margin-top: 28%;
+}
+
+.offer__title {
+    font-size: 32px;
+    color: #010101;
+    margin-bottom: 18px;
+}
+
+.offer__intro {
+    max-width: 310px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    color: #313841;
+    line-height: 1.2em;
+}
+
+.offer__text {
+    max-width: 400px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.25em;
+    animation-delay: .2s;
+}
+
+.icons {
+    animation-delay: .4s;
+}
+
+.icons__item {
+    margin-right: 38px;
+}
+
+.icons__item:last-child {
+    margin-right: 0;
+}
+
+.icons__item a {
+    font-size: 42px;
+    color: #010101;
+    transition: all .3s ease;
+}
+
+.icons__item a:hover {
+    text-decoration: none;
+    color: #ff4800;
+}
+
+.ipad {
+    margin-top: 60px;
+}
+
+/* Block Features */ 
+
+.features {
+    padding-top: 110px;
+    padding-bottom: 84px;
+}
+
+.feature:not(:last-child) {
+    margin-bottom: 65px;
+}
+
+.feature__icon {
+    font-size: 50px;
+    color: #010101;
+}
+
+.feature__title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #010101;
+}
+
+.feature__text {
+    font-size: 16px;
+    line-height: 1.25em;
+}
+
+/* Block Keep and Touch */
+
+.touch {
+    padding-top: 90px;
+    background-color: #010101;
+    color: #fff;
+}
+
+.form {
+    text-align: center;
+}
+
+.touch .title {
+    padding-bottom: 24px;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 580px;
+    padding: 13px 15px 13px 23px;
+    margin-right: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.form__btn {
+    padding: 13px 36px 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fcdb00;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 105px;
+    background-color: #010101;
+    color: #fff;
+}
+
+.credits {
+    width: 190px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+/* Batton - up */
+
+.btn-up {
+    display: none;
+    position: fixed;
+    width: 25px;
+    height: 20px;
+    bottom: 30px;
+    right: 30px;
+    background-image: url(../img/arrow-up.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: .5;
+    transition: .3s;
+}
+
+.btn-up:hover {
+    opacity: 1;
+}
+
+
+/* Media */
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-top: 6%;
+        padding-bottom: 10%;
+    }
+
+    .offer {
+        margin-top: 15%;
+        text-align: center;
+    }
+
+    .offer__intro,
+    .offer__text {
+        min-width: 100%;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .features {
+        padding-top: 12%;
+        padding-bottom: 0;
+    }
+
+    .touch {
+        padding-top: 12%;
+    }
+
+    .footer {
+        padding-bottom: 12%;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding-top: 30px;
+    }
+    
+    .features {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .feature {
+        max-width: 400px;
+    }
+
+    .touch {
+        padding-top: 60px;
+    }
+
+    .footer {
+        padding-bottom: 50px;
+    }
+
+    .form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .form__input {
+        margin-right: 0;
+    }
+
+    .form__btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
